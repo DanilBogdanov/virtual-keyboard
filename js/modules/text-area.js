@@ -19,6 +19,13 @@ export default class TextArea {
     this.element.onkeypress = preventDefault;
   }
 
+  #playAudio() {
+    const audio = new Audio();
+    audio.preload = 'auto';
+    audio.src = './assets/sound/key.mp3';
+    audio.play();
+  }
+
   handelEvent(event) {
     const textArea = this.element;
     textArea.focus();
@@ -97,5 +104,7 @@ export default class TextArea {
         textArea.selectionEnd = start + 1;
       }
     }
+
+    this.#playAudio();
   }
 }
