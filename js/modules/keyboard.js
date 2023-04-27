@@ -76,11 +76,18 @@ export default class Keyboard {
 
   #keyClick(btn) {
     if (btn.isValuable) {
-      if ((this.#isShift && !this.#isCaps)
-        || (!this.#isShift && this.#isCaps)) {
-        this.#customEvent(btn.isValuable, btn.shiftValue);
+      if (this.#isCaps && (btn.code.startsWith('Key') || (btn.value >= 'a' && btn.value <= 'я') || btn.value === 'ё')) {
+        if (this.#isShift) {
+          this.#customEvent(btn.isValuable, btn.value);
+        } else {
+          this.#customEvent(btn.isValuable, btn.shiftValue);
+        }
       } else {
-        this.#customEvent(btn.isValuable, btn.value);
+        if (this.#isShift) {
+          this.#customEvent(btn.isValuable, btn.shiftValue);
+        } else {
+          this.#customEvent(btn.isValuable, btn.value);
+        }
       }
     } else {
       this.#customEvent(false, btn.code);
@@ -135,7 +142,7 @@ export default class Keyboard {
   }
 
   #changeLanguage() {
-    this.#buttons.forEach((btn) => btn.changeLanguage(this.#lang));
+    this.#buttons.forEach((btn) => btn.changeLanguage(this.#lang, this.#isCaps));
   }
 
   #customEvent(isValuable, val) {

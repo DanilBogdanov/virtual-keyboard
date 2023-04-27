@@ -70,9 +70,9 @@ export default class KeyboardButton {
     }
   }
 
-  changeLanguage(lang) {
+  changeLanguage(lang, isCaps) {
     this.#lang = lang;
-    this.#setText();
+    this.#setText(isCaps);
   }
 
   keyDown() {
