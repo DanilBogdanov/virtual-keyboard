@@ -1,0 +1,566 @@
+{
+  "Backquote": {
+    "isValuable": true,
+    "en": {
+      "value": "`",
+      "shiftValue": "~"
+    },
+    "ru": {
+      "value": "ё",
+      "shiftValue": "Ё"
+    }
+  },
+  "Digit1": {
+    "isValuable": true,
+    "en": {
+      "value": "1",
+      "shiftValue": "!"
+    }
+  },
+  "Digit2": {
+    "isValuable": true,
+    "en": {
+      "value": "2",
+      "shiftValue": "@"
+    },
+    "ru": {
+      "value": "2",
+      "shiftValue": "\""
+    }
+  },
+  "Digit3": {
+    "isValuable": true,
+    "en": {
+      "value": "3",
+      "shiftValue": "#"
+    },
+    "ru": {
+      "value": "3",
+      "shiftValue": "№"
+    }
+  },
+  "Digit4": {
+    "isValuable": true,
+    "en": {
+      "value": "4",
+      "shiftValue": "$"
+    },
+    "ru": {
+      "value": "4",
+      "shiftValue": ";"
+    }
+  },
+  "Digit5": {
+    "isValuable": true,
+    "en": {
+      "value": "5",
+      "shiftValue": "#"
+    }
+  },
+  "Digit6": {
+    "isValuable": true,
+    "en": {
+      "value": "6",
+      "shiftValue": "^"
+    },
+    "ru": {
+      "value": "6",
+      "shiftValue": ":"
+    }
+  },
+  "Digit7": {
+    "isValuable": true,
+    "en": {
+      "value": "7",
+      "shiftValue": "&"
+    },
+    "ru": {
+      "value": "7",
+      "shiftValue": "?"
+    }
+  },
+  "Digit8": {
+    "isValuable": true,
+    "en": {
+      "value": "8",
+      "shiftValue": "*"
+    }
+  },
+  "Digit9": {
+    "isValuable": true,
+    "en": {
+      "value": "9",
+      "shiftValue": "("
+    }
+  },
+  "Digit0": {
+    "isValuable": true,
+    "en": {
+      "value": "0",
+      "shiftValue": ")"
+    }
+  },
+  "Minus": {
+    "isValuable": true,
+    "en": {
+      "value": "-",
+      "shiftValue": "_"
+    }
+  },
+  "Equal": {
+    "isValuable": true,
+    "en": {
+      "value": "=",
+      "shiftValue": "+"
+    }
+  },
+  "Backspace": {
+    "isValuable": false,
+    "name": "Backspace"
+  },
+  "Tab": {
+    "isValuable": false,
+    "name": "Tab"
+  },
+  "KeyQ": {
+    "isValuable": true,
+    "en": {
+      "value": "q",
+      "shiftValue": "Q"
+    },
+    "ru": {
+      "value": "й",
+      "shiftValue": "Й"
+    }
+  },
+  "KeyW": {
+    "isValuable": true,
+    "en": {
+      "value": "w",
+      "shiftValue": "W"
+    },
+    "ru": {
+      "value": "ц",
+      "shiftValue": "Ц"
+    }
+  },
+  "KeyE": {
+    "isValuable": true,
+    "en": {
+      "value": "e",
+      "shiftValue": "E"
+    },
+    "ru": {
+      "value": "у",
+      "shiftValue": "У"
+    }
+  },
+  "KeyR": {
+    "isValuable": true,
+    "en": {
+      "value": "r",
+      "shiftValue": "R"
+    },
+    "ru": {
+      "value": "к",
+      "shiftValue": "К"
+    }
+  },
+  "KeyT": {
+    "isValuable": true,
+    "en": {
+      "value": "t",
+      "shiftValue": "T"
+    },
+    "ru": {
+      "value": "е",
+      "shiftValue": "Е"
+    }
+  },
+  "KeyY": {
+    "isValuable": true,
+    "en": {
+      "value": "y",
+      "shiftValue": "Y"
+    },
+    "ru": {
+      "value": "н",
+      "shiftValue": "Н"
+    }
+  },
+  "KeyU": {
+    "isValuable": true,
+    "en": {
+      "value": "u",
+      "shiftValue": "U"
+    },
+    "ru": {
+      "value": "г",
+      "shiftValue": "Г"
+    }
+  },
+  "KeyI": {
+    "isValuable": true,
+    "en": {
+      "value": "i",
+      "shiftValue": "I"
+    },
+    "ru": {
+      "value": "ш",
+      "shiftValue": "Ш"
+    }
+  },
+  "KeyO": {
+    "isValuable": true,
+    "en": {
+      "value": "o",
+      "shiftValue": "O"
+    },
+    "ru": {
+      "value": "щ",
+      "shiftValue": "Щ"
+    }
+  },
+  "KeyP": {
+    "isValuable": true,
+    "en": {
+      "value": "p",
+      "shiftValue": "P"
+    },
+    "ru": {
+      "value": "з",
+      "shiftValue": "З"
+    }
+  },
+  "BracketLeft": {
+    "isValuable": true,
+    "en": {
+      "value": "[",
+      "shiftValue": "{"
+    },
+    "ru": {
+      "value": "х",
+      "shiftValue": "Х"
+    }
+  },
+  "BracketRight": {
+    "isValuable": true,
+    "en": {
+      "value": "]",
+      "shiftValue": "}"
+    },
+    "ru": {
+      "value": "ъ",
+      "shiftValue": "Ъ"
+    }
+  },
+  "Backslash": {
+    "isValuable": true,
+    "en": {
+      "value": "\\",
+      "shiftValue": "|"
+    },
+    "ru": {
+      "value": "\\",
+      "shiftValue": "/"
+    }
+  },
+  "CapsLock": {
+    "isValuable": false,
+    "name": "CapsLock"
+  },
+  "KeyA": {
+    "isValuable": true,
+    "en": {
+      "value": "a",
+      "shiftValue": "A"
+    },
+    "ru": {
+      "value": "ф",
+      "shiftValue": "Ф"
+    }
+  },
+  "KeyS": {
+    "isValuable": true,
+    "en": {
+      "value": "s",
+      "shiftValue": "S"
+    },
+    "ru": {
+      "value": "ы",
+      "shiftValue": "Ы"
+    }
+  },
+  "KeyD": {
+    "isValuable": true,
+    "en": {
+      "value": "d",
+      "shiftValue": "D"
+    },
+    "ru": {
+      "value": "в",
+      "shiftValue": "В"
+    }
+  },
+  "KeyF": {
+    "isValuable": true,
+    "en": {
+      "value": "f",
+      "shiftValue": "F"
+    },
+    "ru": {
+      "value": "а",
+      "shiftValue": "А"
+    }
+  },
+  "KeyG": {
+    "isValuable": true,
+    "en": {
+      "value": "g",
+      "shiftValue": "G"
+    },
+    "ru": {
+      "value": "п",
+      "shiftValue": "П"
+    }
+  },
+  "KeyH": {
+    "isValuable": true,
+    "en": {
+      "value": "h",
+      "shiftValue": "H"
+    },
+    "ru": {
+      "value": "р",
+      "shiftValue": "Р"
+    }
+  },
+  "KeyJ": {
+    "isValuable": true,
+    "en": {
+      "value": "j",
+      "shiftValue": "J"
+    },
+    "ru": {
+      "value": "о",
+      "shiftValue": "О"
+    }
+  },
+  "KeyK": {
+    "isValuable": true,
+    "en": {
+      "value": "k",
+      "shiftValue": "K"
+    },
+    "ru": {
+      "value": "л",
+      "shiftValue": "Л"
+    }
+  },
+  "KeyL": {
+    "isValuable": true,
+    "en": {
+      "value": "l",
+      "shiftValue": "L"
+    },
+    "ru": {
+      "value": "д",
+      "shiftValue": "Д"
+    }
+  },
+  "Semicolon": {
+    "isValuable": true,
+    "en": {
+      "value": ";",
+      "shiftValue": ":"
+    },
+    "ru": {
+      "value": "ж",
+      "shiftValue": "Ж"
+    }
+  },
+  "Quote": {
+    "isValuable": true,
+    "en": {
+      "value": "'",
+      "shiftValue": "\""
+    },
+    "ru": {
+      "value": "э",
+      "shiftValue": "Э"
+    }
+  },
+  "Enter": {
+    "isValuable": false,
+    "name": "Enter"
+  },
+  "ShiftLeft": {
+    "isValuable": false,
+    "name": "Shift"
+  },
+  "KeyZ": {
+    "isValuable": true,
+    "en": {
+      "value": "z",
+      "shiftValue": "Z"
+    },
+    "ru": {
+      "value": "я",
+      "shiftValue": "Я"
+    }
+  },
+  "KeyX": {
+    "isValuable": true,
+    "en": {
+      "value": "x",
+      "shiftValue": "X"
+    },
+    "ru": {
+      "value": "ч",
+      "shiftValue": "Ч"
+    }
+  },
+  "KeyC": {
+    "isValuable": true,
+    "en": {
+      "value": "c",
+      "shiftValue": "C"
+    },
+    "ru": {
+      "value": "с",
+      "shiftValue": "С"
+    }
+  },
+  "KeyV": {
+    "isValuable": true,
+    "en": {
+      "value": "v",
+      "shiftValue": "V"
+    },
+    "ru": {
+      "value": "м",
+      "shiftValue": "М"
+    }
+  },
+  "KeyB": {
+    "isValuable": true,
+    "en": {
+      "value": "b",
+      "shiftValue": "B"
+    },
+    "ru": {
+      "value": "и",
+      "shiftValue": "И"
+    }
+  },
+  "KeyN": {
+    "isValuable": true,
+    "en": {
+      "value": "n",
+      "shiftValue": "N"
+    },
+    "ru": {
+      "value": "т",
+      "shiftValue": "Т"
+    }
+  },
+  "KeyM": {
+    "isValuable": true,
+    "en": {
+      "value": "m",
+      "shiftValue": "M"
+    },
+    "ru": {
+      "value": "ь",
+      "shiftValue": "Ь"
+    }
+  },
+  "Comma": {
+    "isValuable": true,
+    "en": {
+      "value": ",",
+      "shiftValue": "<"
+    },
+    "ru": {
+      "value": "б",
+      "shiftValue": "Б"
+    }
+  },
+  "Period": {
+    "isValuable": true,
+    "en": {
+      "value": ".",
+      "shiftValue": ">"
+    },
+    "ru": {
+      "value": "ю",
+      "shiftValue": "Ю"
+    }
+  },
+  "Slash": {
+    "isValuable": true,
+    "en": {
+      "value": "/",
+      "shiftValue": "?"
+    },
+    "ru": {
+      "value": ".",
+      "shiftValue": ","
+    }
+  },
+  "ShiftRight": {
+    "isValuable": false,
+    "name": "Shift"
+  },
+  "ControlLeft": {
+    "isValuable": false,
+    "name": "Ctrl"
+  },
+  "ControlRight": {
+    "isValuable": false,
+    "name": "Ctrl"
+  },
+  "MetaLeft": {
+    "isValuable": false,
+    "name": "Win"
+  },
+  "MetaRight": {
+    "isValuable": false,
+    "name": "Win"
+  },
+  "Space": {
+    "isValuable": true,
+    "en": {
+      "value": " ",
+      "shiftValue": " "
+    }
+  },
+  "AltLeft": {
+    "isValuable": false,
+    "name": "Alt"
+  },
+  "AltRight": {
+    "isValuable": false,
+    "name": "Alt"
+  },
+  "ArrowLeft": {
+    "isValuable": false,
+    "name": "◀"
+  },
+  "ArrowRight": {
+    "isValuable": false,
+    "name": "▶"
+  },
+  "ArrowUp": {
+    "isValuable": false,
+    "name": "▲"
+  },
+  "ArrowDown": {
+    "isValuable": false,
+    "name": "▼"
+  },
+  "Delete": {
+    "isValuable": false,
+    "name": "Del"
+  }
+}
