@@ -1,0 +1,78 @@
+{
+  "windows": [
+    [
+      {"code": "Backquote"},
+      {"code": "Digit1"},
+      {"code": "Digit2"},
+      {"code": "Digit3"},
+      {"code": "Digit4"},
+      {"code": "Digit5"},
+      {"code": "Digit6"},
+      {"code": "Digit7"},
+      {"code": "Digit8"},
+      {"code": "Digit9"},
+      {"code": "Digit0"},
+      {"code": "Minus"},
+      {"code": "Equal"},
+      {"code": "Backspace", "option": ["stretch"]}
+    ],
+    [
+      {"code": "Tab", "option": ["stretch"]},
+      {"code": "KeyQ"},
+      {"code": "KeyW"},
+      {"code": "KeyE"},
+      {"code": "KeyR"},
+      {"code": "KeyT"},
+      {"code": "KeyY"},
+      {"code": "KeyU"},
+      {"code": "KeyI"},
+      {"code": "KeyO"},
+      {"code": "KeyP"},
+      {"code": "BracketLeft"},
+      {"code": "BracketRight"},
+      {"code": "Backslash"},
+      {"code": "Delete", "option": ["stretch"]}
+    ],
+    [
+      {"code": "CapsLock", "option": ["stretch"]},
+      {"code": "KeyA"},
+      {"code": "KeyS"},
+      {"code": "KeyD"},
+      {"code": "KeyF"},
+      {"code": "KeyG"},
+      {"code": "KeyH"},
+      {"code": "KeyJ"},
+      {"code": "KeyK"},
+      {"code": "KeyL"},
+      {"code": "Semicolon"},
+      {"code": "Quote"},
+      {"code": "Enter", "option": ["double"]}
+    ],
+    [
+      {"code": "ShiftLeft", "option": ["stretch"]},
+      {"code": "KeyZ"},
+      {"code": "KeyX"},
+      {"code": "KeyC"},
+      {"code": "KeyV"},
+      {"code": "KeyB"},
+      {"code": "KeyN"},
+      {"code": "KeyM"},
+      {"code": "Comma"},
+      {"code": "Period"},
+      {"code": "Slash"},
+      {"code": "ArrowUp"},
+      {"code": "ShiftRight", "option": ["double"]}
+    ],
+    [
+      {"code": "ControlLeft"},
+      {"code": "MetaLeft"},
+      {"code": "AltLeft"},
+      {"code": "Space", "option": ["stretch"]},
+      {"code": "AltRight"},
+      {"code": "ArrowLeft"},
+      {"code": "ArrowDown"},
+      {"code": "ArrowRight"},
+      {"code": "ControlRight"}
+    ]
+  ]
+}
