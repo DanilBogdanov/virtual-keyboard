@@ -74,7 +74,7 @@ export default class Keyboard {
     document.body.onkeyup = (event) => this.#keyUp(event);
   }
 
-  #keyClick(btn) {
+  #keyClick(btn, isRepeat) {
     if (btn.isValuable) {
       if (this.#isCaps && (btn.code.startsWith('Key') || (btn.value >= 'a' && btn.value <= 'я') || btn.value === 'ё')) {
         if (this.#isShift) {
@@ -82,15 +82,13 @@ export default class Keyboard {
         } else {
           this.#customEvent(btn.isValuable, btn.shiftValue);
         }
+      } else if (this.#isShift) {
+        this.#customEvent(btn.isValuable, btn.shiftValue);
       } else {
-        if (this.#isShift) {
-          this.#customEvent(btn.isValuable, btn.shiftValue);
-        } else {
-          this.#customEvent(btn.isValuable, btn.value);
-        }
+        this.#customEvent(btn.isValuable, btn.value);
       }
     } else {
-      this.#customEvent(false, btn.code);
+      this.#customEvent(false, btn.code, isRepeat);
     }
   }
 
@@ -118,7 +116,7 @@ export default class Keyboard {
         this.#changeLanguage();
       }
 
-      this.#keyClick(btn);
+      this.#keyClick(btn, event.repeat);
     }
   }
 
@@ -145,9 +143,9 @@ export default class Keyboard {
     this.#buttons.forEach((btn) => btn.changeLanguage(this.#lang, this.#isCaps));
   }
 
-  #customEvent(isValuable, val) {
+  #customEvent(isValuable, val, isRepeat = false) {
     const event = new CustomEvent('key', {
-      detail: { isValuable, val },
+      detail: { isValuable, val, isRepeat },
     });
 
     this.element.dispatchEvent(event);

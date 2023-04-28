@@ -1,6 +1,8 @@
 export default class TextArea {
   element;
 
+  #soundSrc = './assets/sound/key.mp3';
+
   constructor() {
     this.#createElement();
     this.#resetDefaultBehavior();
@@ -22,7 +24,7 @@ export default class TextArea {
   #playAudio() {
     const audio = new Audio();
     audio.preload = 'auto';
-    audio.src = './assets/sound/key.mp3';
+    audio.src = this.#soundSrc;
     audio.play();
   }
 
@@ -105,6 +107,12 @@ export default class TextArea {
       }
     }
 
-    this.#playAudio();
+    const noRepeatSound = ['CapsLock', 'MetaLeft', 'MetaRight', 'ShiftLeft', 'ShiftRight',
+      'AltLeft', 'AltRight', 'ControlLeft', 'ControlRight'];
+    if (!event.detail.isRepeat) {
+      this.#playAudio();
+    } else if (!noRepeatSound.includes(value)) {
+      this.#playAudio();
+    }
   }
 }
