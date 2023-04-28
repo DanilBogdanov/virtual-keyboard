@@ -106,7 +106,7 @@ export default class Keyboard {
         this.#capsPress();
       }
 
-      if (event.ctrlKey && event.altKey && (event.code === 'ControlLeft' || event.code === 'AltLeft')) {
+      if (!event.repeat && event.ctrlKey && event.altKey && (event.code === 'ControlLeft' || event.code === 'AltLeft')) {
         if (this.#lang === 'en') {
           this.#lang = 'ru';
         } else {
