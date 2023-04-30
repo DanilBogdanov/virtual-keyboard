@@ -13,10 +13,9 @@
 .textarea{
   display: block;
   box-sizing: border-box;
-  width: 800px;
-  height: 200px;
   margin: 10px auto;
   outline:none;
+  resize: none;
   font-size: 1.3rem;
   box-shadow: 0 0 20px 2px rgb(153, 183, 221);
 }

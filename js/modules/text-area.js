@@ -1,6 +1,8 @@
 export default class TextArea {
   element;
 
+  #buffer = '';
+
   #soundSrc = './assets/sound/key.mp3';
 
   constructor() {
@@ -11,6 +13,9 @@ export default class TextArea {
   #createElement() {
     const textArea = document.createElement('textarea');
     textArea.className = 'textarea';
+    textArea.cols = 68;
+    textArea.rows = 8;
+    textArea.placeholder = 'ctrl + a: select all\nctrl + c: copy\nctrl + v: paste\nctrl + x: cut';
     this.element = textArea;
   }
 
@@ -104,6 +109,28 @@ export default class TextArea {
         textArea.setRangeText('\t', start, end);
         textArea.selectionStart = start + 1;
         textArea.selectionEnd = start + 1;
+      }
+
+      if (value === 'SelectAll') {
+        textArea.selectionStart = 0;
+        textArea.selectionEnd = textArea.textLength;
+      }
+
+      if (value === 'Copy') {
+        this.#buffer = textArea.value.substring(start, end);
+      }
+
+      if (value === 'Paste') {
+        textArea.setRangeText(this.#buffer, start, end);
+        textArea.selectionStart = start + this.#buffer.length;
+        textArea.selectionEnd = textArea.selectionStart;
+      }
+
+      if (value === 'Cut') {
+        this.#buffer = textArea.value.substring(start, end);
+        textArea.setRangeText('', start, end);
+        textArea.selectionStart = start;
+        textArea.selectionEnd = start;
       }
     }
 

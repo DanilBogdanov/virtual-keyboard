@@ -116,6 +116,26 @@ export default class Keyboard {
         this.#changeLanguage();
       }
 
+      if (event.code === 'KeyA' && event.ctrlKey) {
+        this.#customEvent(false, 'SelectAll', event.repeat);
+        return;
+      }
+
+      if (event.code === 'KeyC' && event.ctrlKey) {
+        this.#customEvent(false, 'Copy', event.repeat);
+        return;
+      }
+
+      if (event.code === 'KeyV' && event.ctrlKey) {
+        this.#customEvent(false, 'Paste', event.repeat);
+        return;
+      }
+
+      if (event.code === 'KeyX' && event.ctrlKey) {
+        this.#customEvent(false, 'Cut', event.repeat);
+        return;
+      }
+
       this.#keyClick(btn, event.repeat);
     }
   }
