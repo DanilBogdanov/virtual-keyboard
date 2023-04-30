@@ -106,9 +106,12 @@ export default class TextArea {
       }
 
       if (value === 'Tab') {
-        textArea.setRangeText('\t', start, end);
-        textArea.selectionStart = start + 1;
-        textArea.selectionEnd = start + 1;
+        textArea.setRangeText(' ', start, end);
+        textArea.setRangeText(' ', start, end);
+        textArea.setRangeText(' ', start, end);
+        textArea.setRangeText(' ', start, end);
+        textArea.selectionStart = start + 4;
+        textArea.selectionEnd = start + 4;
       }
 
       if (value === 'SelectAll') {
