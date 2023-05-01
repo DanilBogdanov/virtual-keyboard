@@ -8,6 +8,7 @@ export default class TextArea {
   constructor() {
     this.#createElement();
     this.#resetDefaultBehavior();
+    this.element.focus();
   }
 
   #createElement() {
@@ -30,7 +31,15 @@ export default class TextArea {
     const audio = new Audio();
     audio.preload = 'auto';
     audio.src = this.#soundSrc;
-    audio.play();
+    audio.autoplay = false;
+    const prom = audio.play();
+    if (prom !== undefined) {
+      prom.then(() => {
+        audio.autoplay = true;
+      }).catch(() => {
+        audio.muted = true;
+      });
+    }
   }
 
   handelEvent(event) {
