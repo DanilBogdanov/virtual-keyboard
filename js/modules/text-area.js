@@ -69,8 +69,7 @@ export default class TextArea {
       }
 
       if (value === 'ArrowUp') {
-        const rowLength = Math.floor(textArea.clientWidth / 11.5);
-        let position = start - rowLength;
+        let position = start - (this.element.cols + 1);
         if (position < 0) {
           position = 0;
         }
@@ -79,8 +78,7 @@ export default class TextArea {
       }
 
       if (value === 'ArrowDown') {
-        const rowLength = Math.floor(textArea.clientWidth / 11.5);
-        let position = start + rowLength;
+        let position = start + (this.element.cols + 1);
         if (position > textArea.textLength) {
           position = textArea.textLength;
         }
